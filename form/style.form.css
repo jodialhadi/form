@@ -1,0 +1,80 @@
+body {
+    background: url("green.jpg");
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 730px;
+    margin: 0 auto;
+}
+
+#header {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#header:after,
+header:berfore {
+    display: table;
+    content: " ";
+}
+
+#header:after {
+    clear: both;
+}
+
+#header img {
+    padding-left: 320px;
+}
+
+#header h1 {
+    padding-left: 200px;
+    margin-top: 5px;
+}
+
+#header p {
+    font-weight: 900;
+    padding-left: 240px;
+
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 2);
+    border-radius: 3px;
+    padding-bottom: 30px;
+
+}
+
+.form-container:after,
+.form-container:before {
+    background: white;
+    border: 1px solid black;
+    bottom: -8px;
+    position: absolute;
+    left: 4px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 2);
+}
+
+.form-container:before {
+    bottom: -14px;
+    left: 8px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0, 0, 15 rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    font-weight: 900;
+}
